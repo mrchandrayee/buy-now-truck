@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f3460">
+  <!-- Primary SEO -->
+  <title>Buy Now → Truck Animation | mrchandrayee</title>
+  <meta name="description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/buy-now-truck/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/buy-now-truck/">
+  <meta property="og:title" content="Buy Now → Truck Animation | mrchandrayee">
+  <meta property="og:description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
+  <meta property="og:image" content="https://mrchandrayee.github.io/buy-now-truck/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/buy-now-truck/">
+  <meta name="twitter:title" content="Buy Now → Truck Animation | mrchandrayee">
+  <meta name="twitter:description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/buy-now-truck/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Buy Now → Truck Animation",
+    "description": "A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.",
+    "url": "https://mrchandrayee.github.io/buy-now-truck/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+<meta name="theme-color" content="#f8eee4">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="browser">
+  <div class="browserbar"><span class="lights"><i></i><i></i><i></i></span><b>Buy Now → <em>truck</em></b><span class="address">localhost / cart</span></div>
+  <main class="demo">
+    <button class="sound" id="sound" aria-label="Toggle sound">🔊</button>
+    <div class="checkout" id="checkout">
+      <button id="atc" class="atc" type="button">
+        <span class="atc__label"><svg class="bag-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 13H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Buy Now</span>
+        <svg class="atc__cart" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2h10.9l2-8.1H6"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
+      </button>
+      <div class="truck" aria-hidden="true">
+        <svg viewBox="0 0 172 96">
+          <g class="truck__body">
+            <rect x="7" y="20" width="93" height="49" rx="8" fill="#ff7044"/>
+            <path d="M100 37h28l23 20v12h-51Z" fill="#f05a31"/>
+            <path d="M112 41h13l17 16h-30Z" fill="#d9f0ef"/>
+            <rect x="14" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
+            <rect x="39" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
+            <rect x="14" y="50" width="44" height="5" rx="2" fill="#d74b2a" opacity=".5"/>
+            <path d="M7 64h144v8H7Z" fill="#c74427"/>
+            <circle cx="39" cy="72" r="13" fill="#25252a"/><circle cx="39" cy="72" r="5" fill="#c6c8c9"/>
+            <circle cx="126" cy="72" r="13" fill="#25252a"/><circle cx="126" cy="72" r="5" fill="#c6c8c9"/>
+            <path d="M151 59h10v10h-10" fill="#ff9a5c"/>
+          </g>
+          <path class="speed speed-one" d="M1 34h-22M2 48h-33M2 61h-20" stroke="#ef805c" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="confirm"><span class="check">✓</span><span>Ordered</span></div>
+    </div>
+    <div class="code-panels">
+      <section class="code html"><header><span class="file"><i></i>index.html</span><small>markup</small></header><pre><code>&lt;div class="checkout"&gt;
+  &lt;button id="atc"&gt;
+    &lt;span class="atc__label"&gt;
+      Buy Now
+    &lt;/span&gt;
+    &lt;svg class="atc__cart"/&gt;
+  &lt;/button&gt;
+
+  &lt;!-- becomes a truck → --&gt;
+  &lt;div class="truck"&gt;
+    &lt;svg viewBox="0 0 172 96"&gt;…&lt;/svg&gt;
+  &lt;/div&gt;
+
+  &lt;div class="confirm"&gt;
+    Ordered ✓
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></section>
+      <section class="code css"><header><span class="file"><i></i>style.css</span><small>motion</small></header><pre><code>/* truck rides over the badge */
+.truck { z-index: 3; }
+.confirm { z-index: 1; }
+
+/* Label → cart */
+.is-packing .atc__label {
+  opacity: 0;
+}
+
+/* wheels roll on drive */
+.is-rolling .wheel__spin {
+  animation: roll .34s linear
+    infinite;
+}</code></pre></section>
+    </div>
+    <div class="hint" id="hint">CLICK THE BUTTON TO PLACE AN ORDER</div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body></html>
