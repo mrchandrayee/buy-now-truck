@@ -1,110 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0f3460">
-  <!-- Primary SEO -->
-  <title>Buy Now → Truck Animation | mrchandrayee</title>
-  <meta name="description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
-  <meta name="author" content="mrchandrayee">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c111c">
+  <title>Buy Now to Delivery Truck Animation | IAPFSAI UI Lab</title>
+  <meta name="description" content="Explore an animated e-commerce Buy Now microinteraction: a button transforms into a delivery truck using HTML, CSS and vanilla JavaScript.">
+  <meta name="author" content="IAPFSAI Technologies Private Limited">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mrchandrayee.github.io/buy-now-truck/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mrchandrayee.github.io/buy-now-truck/">
-  <meta property="og:title" content="Buy Now → Truck Animation | mrchandrayee">
-  <meta property="og:description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
+  <meta property="og:title" content="Buy Now → Delivery Truck | Interactive UI Lab">
+  <meta property="og:description" content="A playful e-commerce microinteraction built with pure HTML, CSS and JavaScript.">
   <meta property="og:image" content="https://mrchandrayee.github.io/buy-now-truck/preview.png">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://mrchandrayee.github.io/buy-now-truck/">
-  <meta name="twitter:title" content="Buy Now → Truck Animation | mrchandrayee">
-  <meta name="twitter:description" content="A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.">
+  <meta name="twitter:title" content="Buy Now → Delivery Truck Animation">
+  <meta name="twitter:description" content="Watch a Buy Now button transform into a delivery truck.">
   <meta name="twitter:image" content="https://mrchandrayee.github.io/buy-now-truck/preview.png">
-  <meta name="twitter:creator" content="@mrchandrayee">
-
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Buy Now → Truck Animation",
-    "description": "A delightful buy-now button with animated truck delivery interaction. Satisfying e-commerce microinteraction in pure HTML, CSS & JS.",
-    "url": "https://mrchandrayee.github.io/buy-now-truck/",
-    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
-    "applicationCategory": "WebApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Buy Now to Delivery Truck Animation",
+    "applicationCategory":"DeveloperApplication",
+    "operatingSystem":"Any",
+    "description":"An interactive e-commerce button animation demo built with HTML, CSS and JavaScript.",
+    "url":"https://mrchandrayee.github.io/buy-now-truck/",
+    "author":{"@type":"Organization","name":"IAPFSAI Technologies Private Limited","url":"https://iapfsai.com/"},
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
   }
   </script>
-<meta name="theme-color" content="#f8eee4">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261119">
+  <script src="script.js?v=20261119" defer></script>
 </head>
 <body>
-<div class="browser">
-  <div class="browserbar"><span class="lights"><i></i><i></i><i></i></span><b>Buy Now → <em>truck</em></b><span class="address">localhost / cart</span></div>
-  <main class="demo">
-    <button class="sound" id="sound" aria-label="Toggle sound">🔊</button>
-    <div class="checkout" id="checkout">
-      <button id="atc" class="atc" type="button">
-        <span class="atc__label"><svg class="bag-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 13H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Buy Now</span>
-        <svg class="atc__cart" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2h10.9l2-8.1H6"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
-      </button>
-      <div class="truck" aria-hidden="true">
-        <svg viewBox="0 0 172 96">
-          <g class="truck__body">
-            <rect x="7" y="20" width="93" height="49" rx="8" fill="#ff7044"/>
-            <path d="M100 37h28l23 20v12h-51Z" fill="#f05a31"/>
-            <path d="M112 41h13l17 16h-30Z" fill="#d9f0ef"/>
-            <rect x="14" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
-            <rect x="39" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
-            <rect x="14" y="50" width="44" height="5" rx="2" fill="#d74b2a" opacity=".5"/>
-            <path d="M7 64h144v8H7Z" fill="#c74427"/>
-            <circle cx="39" cy="72" r="13" fill="#25252a"/><circle cx="39" cy="72" r="5" fill="#c6c8c9"/>
-            <circle cx="126" cy="72" r="13" fill="#25252a"/><circle cx="126" cy="72" r="5" fill="#c6c8c9"/>
-            <path d="M151 59h10v10h-10" fill="#ff9a5c"/>
-          </g>
-          <path class="speed speed-one" d="M1 34h-22M2 48h-33M2 61h-20" stroke="#ef805c" stroke-width="4" stroke-linecap="round"/>
-        </svg>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="brand" href="https://iapfsai.com/" target="_blank" rel="noreferrer">
+        <span class="brand-mark" aria-hidden="true">✳</span><span>IAPFSAI <span class="brand-muted">/ LAB</span></span>
+      </a>
+      <a class="top-link" href="https://github.com/mrchandrayee/buy-now-truck" target="_blank" rel="noreferrer">VIEW SOURCE <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> E-COMMERCE MICROINTERACTION · EXPERIMENT 002</p>
+        <h1 id="page-title">From <span class="warm">“Buy now”</span><br>to <span class="gradient-text">on its way.</span></h1>
+        <p class="intro">A tiny checkout interaction with a big personality. Watch the button pack the order, send a delivery truck across the screen, and land on a completion state.</p>
+        <div class="hero-tags"><span>PURE HTML</span><span>CSS MOTION</span><span>VANILLA JS</span><span>ZERO DEPENDENCIES</span></div>
       </div>
-      <div class="confirm"><span class="check">✓</span><span>Ordered</span></div>
-    </div>
-    <div class="code-panels">
-      <section class="code html"><header><span class="file"><i></i>index.html</span><small>markup</small></header><pre><code>&lt;div class="checkout"&gt;
-  &lt;button id="atc"&gt;
-    &lt;span class="atc__label"&gt;
-      Buy Now
-    &lt;/span&gt;
-    &lt;svg class="atc__cart"/&gt;
-  &lt;/button&gt;
+      <aside class="hero-note">
+        <span class="note-kicker">THE IDEA</span>
+        <strong>Make the wait feel like part of the experience.</strong>
+        <span class="note-caption">A playful visual prototype for e-commerce calls to action.</span>
+      </aside>
+    </section>
 
-  &lt;!-- becomes a truck → --&gt;
-  &lt;div class="truck"&gt;
-    &lt;svg viewBox="0 0 172 96"&gt;…&lt;/svg&gt;
-  &lt;/div&gt;
+    <section class="playground" aria-labelledby="playground-title">
+      <div class="playground-head">
+        <div><p class="eyebrow">LIVE INTERACTION</p><h2 id="playground-title">Take it for a ride.</h2></div>
+        <span class="demo-badge"><i></i> INTERACTIVE DEMO</span>
+      </div>
+      <div class="demo">
+        <div class="demo-orbit orbit-one" aria-hidden="true"></div>
+        <div class="demo-orbit orbit-two" aria-hidden="true"></div>
+        <div class="demo-glow" aria-hidden="true"></div>
+        <div class="checkout" id="checkout">
+          <button id="atc" class="atc" type="button">
+            <span class="atc__label">
+              <svg class="bag-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 13H5L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+              <span>Buy Now</span>
+            </span>
+            <svg class="atc__cart" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2h10.9l2-8.1H6"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
+            <span class="button-shine" aria-hidden="true"></span>
+          </button>
+          <div class="truck" aria-hidden="true">
+            <svg viewBox="0 0 172 96">
+              <g class="truck__body">
+                <rect x="7" y="20" width="93" height="49" rx="8" fill="#ff7044"/>
+                <path d="M100 37h28l23 20v12h-51Z" fill="#f05a31"/>
+                <path d="M112 41h13l17 16h-30Z" fill="#d9f0ef"/>
+                <rect x="14" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
+                <rect x="39" y="28" width="19" height="17" rx="3" fill="#fff0dc"/>
+                <rect x="14" y="50" width="44" height="5" rx="2" fill="#d74b2a" opacity=".5"/>
+                <path d="M7 64h144v8H7Z" fill="#c74427"/>
+                <circle cx="39" cy="72" r="13" fill="#25252a"/><circle cx="39" cy="72" r="5" fill="#c6c8c9"/>
+                <circle cx="126" cy="72" r="13" fill="#25252a"/><circle cx="126" cy="72" r="5" fill="#c6c8c9"/>
+                <path d="M151 59h10v10h-10" fill="#ff9a5c"/>
+              </g>
+              <path class="speed speed-one" d="M1 34h-22M2 48h-33M2 61h-20" stroke="#ffab85" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="confirm" role="status" aria-live="polite"><span class="check">✓</span><span>Demo complete</span></div>
+        </div>
+        <p class="hint" id="hint">PRESS BUY NOW TO PLAY THE ANIMATION</p>
+        <button class="replay" id="replay" type="button" hidden>↻ Replay interaction</button>
+        <div class="demo-foot"><span><i></i> No real order is placed</span><span>Tap / click to interact</span></div>
+      </div>
+      <p class="mobile-tip">On mobile? Tap the button to watch the delivery sequence.</p>
+    </section>
 
-  &lt;div class="confirm"&gt;
-    Ordered ✓
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre></section>
-      <section class="code css"><header><span class="file"><i></i>style.css</span><small>motion</small></header><pre><code>/* truck rides over the badge */
-.truck { z-index: 3; }
-.confirm { z-index: 1; }
+    <section class="details" aria-label="Interaction steps">
+      <article><span class="step-no">01</span><div><h3>Pack</h3><p>The label folds away and the cart icon takes its place.</p></div></article>
+      <article><span class="step-no">02</span><div><h3>Dispatch</h3><p>A delivery truck accelerates through the checkout scene.</p></div></article>
+      <article><span class="step-no">03</span><div><h3>Complete</h3><p>A friendly completion state closes the visual story.</p></div></article>
+    </section>
 
-/* Label → cart */
-.is-packing .atc__label {
-  opacity: 0;
-}
+    <section class="build-note">
+      <div><p class="eyebrow">BUILT FOR PRODUCT TEAMS</p><h2>Small motion.<br><span>Stronger product feel.</span></h2></div>
+      <p>Microinteractions can make feedback clearer and interfaces feel more considered. Adapt this pattern for product pages, carts, order tracking, onboarding and branded checkout experiences.</p>
+      <div class="build-tags"><span>Keyboard-friendly</span><span>Responsive</span><span>Reduced-motion aware</span><span>No framework</span></div>
+    </section>
 
-/* wheels roll on drive */
-.is-rolling .wheel__spin {
-  animation: roll .34s linear
-    infinite;
-}</code></pre></section>
-    </div>
-    <div class="hint" id="hint">CLICK THE BUTTON TO PLACE AN ORDER</div>
+    <footer class="footer">
+      <div><p class="eyebrow">ENGINEERED BY</p><a class="footer-brand" href="https://iapfsai.com/" target="_blank" rel="noreferrer">IAPFSAI Technologies</a><p class="footer-copy">Web experiences · SaaS platforms · AI & automation</p></div>
+      <a class="contact-link" href="https://iapfsai.com/contact" target="_blank" rel="noreferrer">Have a project? Let’s talk <span aria-hidden="true">↗</span></a>
+      <div class="footer-bottom"><span>© <span id="year"></span> IAPFSAI Technologies Private Limited</span><span>HTML · CSS · JAVASCRIPT</span></div>
+    </footer>
   </main>
-</div>
-<script src="script.js"></script>
-</body></html>
+</body>
+</html>
